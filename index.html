@@ -1,41 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+yexingquan1986.github.io/
 
-<head>
+
+
+
+<头>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>财务成长性指标计算</title>
-</head>
+</头>
 
-<body>
+<身体>
   <h1>高新技术企业认定财务成长性指标</h1>
-  <form id="growthForm">
+  <表单 id="增长表单">
     <label for="year1">2022 年销售额：</label>
-    <input type="number" id="year1Sales" step="0.01"><br>
+    <输入 类型="数字" id="年1销售" 步长="0.01"><换行>
     <label for="year1Assets">2022 年净资产：</label>
-    <input type="number" id="year1Assets" step="0.01"><br><br>
+    <输入 类型="数字" id="year1Assets" 步长="0.01"><换行><换行>
 
     <label for="year2">2023 年销售额：</label>
-    <input type="number" id="year2Sales" step="0.01"><br>
+    <输入 类型="数字" id="年2销售" 步长="0.01"><换行>
     <label for="year2Assets">2023 年净资产：</label>
-    <input type="number" id="year2Assets" step="0.01"><br><br>
+    <输入 类型="数字" id="年2资产" 步长="0.01"><换行><换行>
 
     <label for="year3">2024 年销售额：</label>
-    <input type="number" id="year3Sales" step="0.01"><br>
+    <输入 类型="数字" id="年份3销售" 步长="0.01"><换行>
     <label for="year3Assets">2024 年净资产：</label>
-    <input type="number" id="year3Assets" step="0.01"><br><br>
+    <输入 类型="数字" id="年3资产" 步长="0.01"><换行><换行>
 
-    <button type="button" onclick="calculateGrowth()">计算成长性指标</button><br><br>
+    <按钮 类型="按钮" 点击="计算成长性指标()">计算成长性指标</按钮><换行><换行>
 
-    <div id="result"></div>
-  </form>
+    <div id="结果"></div>
+  </表单>
 
-  <script>
-    function calculateGrowth() {
-      const year1Sales = parseFloat(document.getElementById('year1Sales').value);
-      const year2Sales = parseFloat(document.getElementById('year2Sales').value);
-      const year3Sales = parseFloat(document.getElementById('year3Sales').value);
+  <脚本>
+    函数 计算增长() {
+      常量 第一年销售额 = 解析浮点数(文档.通过ID获取元素('第一年销售额').值);
+      常量 年2销售 = 解析浮点数(文档.通过ID获取元素('年2销售').值);
+      常量 三年销售 = 解析浮点数(文档.通过ID获取元素('三年销售').值);
 
       const year1Assets = parseFloat(document.getElementById('year1Assets').value);
       const year2Assets = parseFloat(document.getElementById('year2Assets').value);
@@ -95,11 +97,12 @@
         return '3 分至 4 分';
       } else if (growthRate > 0) {
         return '1 分至 2 分';
-      } else {
-        return '0 分';
-      }
-    }
-  </script>
+      } 否则 {} else {
+        返回 '0 分';return '0 分';
+      }}
+    }}
+  </script></script>
 </body>
+
 
 </html>
